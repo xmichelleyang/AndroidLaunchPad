@@ -1,0 +1,33 @@
+img {
+    width: 200px;
+    
+}
+
+h1{
+    font-family: 'Roboto', sans-serif, serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#itemWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+}
+
+#header{
+    background-color: #caccf7;
+    width:100wh;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+body {
+    margin: 0px;
+}
