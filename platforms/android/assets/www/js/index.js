@@ -15,21 +15,6 @@ document.addEventListener("deviceready", function() {
         }
     });
 
-    // Map
-    var mapLink = document.querySelector('#map-link');
-    mapLink.addEventListener("click", function() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(onGeolocationSuccess, onGeolocationFail, { timeout: 3000 });
-        } else {
-            alert('Unable to get current location.');
-        }
-    });
-
-
-    //
-    // Camera callbacks
-    //
-
     function onCameraSuccess(uri) {
         // Args: message, callback when dialog is dismissed, title, button name
         navigator.notification.alert('Picture saved.', null, 'Camera', 'OK');
@@ -41,20 +26,5 @@ document.addEventListener("deviceready", function() {
         if (msg.indexOf('cancel') == -1) {
             alert(msg);
         }
-    }
-
-
-    //
-    // Map-related callbacks
-    //
-
-    function onGeolocationSuccess(position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
-        window.location = "geo:" + latitude + "," + longitude;
-    }
-
-    function onGeolocationFail(msg) {
-        alert(msg);
     }
 });
