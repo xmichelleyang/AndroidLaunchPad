@@ -8,7 +8,6 @@ h1{
     font-size: 50px;
     text-align: center;
     color: white;
-    padding-left: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -23,7 +22,11 @@ h1{
 
 #header{
     background-color: #caccf7;
-    width:100%;
-    margin-bottom: 0px;
+    width:100wh;
+    margin-bottom: 20px;
     padding: 20px;
+}
+
+body {
+    margin: 0px;
 }
